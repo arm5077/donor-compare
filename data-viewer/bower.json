@@ -1,0 +1,16 @@
+{
+  "name": "data-viewer",
+  "version": "0.0.0",
+  "authors": [
+    "Andrew McGill <arm5077@gmail.com>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

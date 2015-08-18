@@ -1,0 +1,63 @@
+<!doctype html>
+<html ng-app="donorApp">
+<head>
+	
+	<!-- Angular.js -->
+	<script src="bower_components/angular/angular.min.js"></script>
+	
+	<link rel="stylesheet" href="styles.css" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	
+</head>
+
+<body ng-controller="donorController">
+
+	<form>
+		<label>
+			<input type="radio" ng-model="mode" value="contributors" />
+			Contributor count
+		</label>
+		
+		<label>
+			<input type="radio" ng-model="mode" value="money" />
+			Money total
+		</label>
+	</form>	
+	
+	<table>
+		<thead>
+			<th></th>
+			<th ng-repeat="candidate in candidates">{{candidate.CAND_NAME}} ({{candidate.CAND_ELECTION_YR}})</th>
+		</thead>
+		<tbody>
+			<tr ng-repeat="candidate in candidates">
+				<td>{{candidate.CAND_NAME}} ({{candidate.CAND_ELECTION_YR}})</td>
+				<td ng-repeat="link in candidate.linkages">
+					{{ Math.round((link.sum / candidate.contributions_sum) * 1000) / 10 }}%
+
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	
+
+	<ul>
+		<li ng-repeat="candidate in candidates">
+			{{candidate.CAND_NAME}} ({{candidate.CAND_ELECTION_YR}})	
+			<ul>
+				<li ng-repeat="link in candidate.linkages" ng-class="{faded: link.count / candidate.contributions_count == 0 || candidate.contributions_count == 0 || link.count / candidate.contributions_count == 1 }" style = "background-color: {{ getRed(candidate, link) }}">
+					{{link.candidate.name}}
+					<ul>
+						<li>Contributor match: {{Math.round((link.count / candidate.contributions_count) * 1000) / 10 }}% ({{link.count}}</li>
+						<li>Money match: {{ Math.round((link.sum / candidate.contributions_sum) * 1000) / 10 }}% (${{link.sum}})</li>
+					</ul>
+				</li>
+			</ul>
+		</li>
+	<ul>
+	
+</body>
+
+<script src="app.js"></script>
+
+</html>

@@ -1,0 +1,64 @@
+[
+    {
+        "year": 2008,
+        "candidates": [
+			"BIDEN, JOSEPH R JR",
+			"DODD, CHRISTOPHER J",
+			"GRAVEL, MIKE",
+			"KUCINICH, DENNIS J",
+			"RICHARDSON, BILL",
+			"THOMPSON, FRED DALTON",
+			"KEYES, ALAN L",
+			"HUNTER, DUNCAN",
+            "MCCAIN, JOHN S.",
+            "ROMNEY, MITT",
+            "HUCKABEE, MIKE",
+            "PAUL, RON",
+            "GIULIANI, RUDOLPH W.",
+            "OBAMA, BARACK",
+            "CLINTON, HILLARY RODHAM",
+            "EDWARDS, JOHN"
+        ]
+    },
+    {
+        "year": 2012,
+        "candidates": [
+            "OBAMA, BARACK",			
+            "SANTORUM, RICHARD J.",
+            "ROMNEY, MITT / RYAN, PAUL D. ",
+            "HUNTSMAN, JON",
+            "PAUL, RON",
+            "PERRY, JAMES R (RICK)",
+            "GINGRICH, NEWT",
+			"KARGER, FRED",
+			"ROEMER, CHARLES E. ''BUDDY'' III",
+			"BACHMANN, MICHELE"
+        ]
+    },
+    {
+        "year": 2016,
+        "candidates": [
+            "BUSH, JEB",
+            "CARSON, BENJAMIN S SR MD",
+            "CHRISTIE, CHRISTOPHER J",
+            "CRUZ, RAFAEL EDWARD TED",
+            "FIORINA, CARLY",
+            "GILMORE, JAMES S III",
+            "GRAHAM, LINDSEY O",
+            "HUCKABEE, MIKE",
+            "JINDAL, BOBBY",
+            "KASICH, JOHN R",
+            "PATAKI, GEORGE E",
+            "PAUL, RAND",
+            "PERRY, JAMES R (RICK)",
+            "RUBIO, MARCO",
+            "SANTORUM, RICHARD J.",
+            "TRUMP, DONALD J",
+            "CHAFEE, LINCOLN DAVENPORT MR.",
+            "CLINTON, HILLARY RODHAM",
+            "O'MALLEY, MARTIN JOSEPH",
+            "SANDERS, BERNARD",
+            "WEBB, JAMES HENRY JR."
+        ]
+    }
+]
